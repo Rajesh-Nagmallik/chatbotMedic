@@ -1,0 +1,51 @@
+intents:
+  - greet
+  - greet+ask_recommendation
+  - ask_recommendation
+  - inform_tired+ask_recommendation
+  - inform_good_energy
+  - thanks+goodbye
+
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_acknowledge
+- action_recommend
+- utter_goodbye
+- utter_acknowledge_double
+- action_recommend_no_walk
+- utter_keep_it
+
+templates:
+  utter_greet:
+  - text: "Hi Back, 24h advisor here"
+  - text: "Ahoj"
+  - text: "Hi there"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_acknowledge:
+  - text: "got it"
+  - text: "Understood..."
+  - text: "Alright"
+  - text: "Sure"
+
+  utter_keep_it:
+  - text: "Great, carry on!"
+  - text: "Great, Cheers!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "I am here for you, bye"
+
+  utter_acknowledge_double:
+  - text: "Alright, so let me think about those"
+  - text: "Hi, sure,  let me tailor a good advice for you... reading sixth sense KB"
+  - text: ""
+
+  utter_acknowledge_no_walk:
+  - text: "I don't want to walk either, let me find alternatives for you my friend"
+  - text: "Sometimes not walking but a good Salmon can help,let me confirm you that"
+  - text: "No walk, alright, I will find another funny alternative for you buddy"
